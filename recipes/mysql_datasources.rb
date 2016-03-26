@@ -47,5 +47,6 @@ mysql['jndi']['datasources'].each do |source|
       mysql_timeout: '5'
     )
     action :create
+    notifies :restart, "service[#{node['wildfly']['service']}]", :delayed
   end
 end
