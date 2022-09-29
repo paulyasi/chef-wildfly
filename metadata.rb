@@ -12,4 +12,4 @@ supports 'centos'
 
 depends 'apt'
 depends 'yum'
-depends 'java', '~> 2.0.0'
+depends 'java', '>= 1.50.0'
